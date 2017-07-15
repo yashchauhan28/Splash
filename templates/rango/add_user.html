@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Rango</title>
+</head>
+<body>
+<h1>Add a User</h1>
+<div>
+<form id="user_form" method="post" action="/rango/add_user/">
+{% csrf_token %}
+Name <input type="text" name="NAME" required=""><br>
+Unique Id <input type="name" name="UNIQUEID" required=""><br>
+Email <input type="email" name="EMAIL" required=""><br>
+Email Passoword <input type="password" name="EMAILPASS" required=""><br>
+Fb-key <input type="text" name="FBOATH" required=""><br>
+Connection with PC <input type="checkbox" name="add_pc_attr"><br>
+Connection with android <input type="checkbox" name="add_android_attr"><br>
+<input type="submit" name="submit" value="Create User" />
+</form>
+</div>
+</body>
+</html>

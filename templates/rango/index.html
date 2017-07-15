@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<title>Rango</title>
+</head>
+<body>
+<h1>Rango says...</h1>
+<div>hey there partner!</div>
+<div id = "display">
+{% if users %}
+	<h2>users are present</h2>
+	<ul class = "user_list">
+	{% for user in users %}
+	<li>
+  	<a href="/rango/session/{{ user.uniqueid }}">{{ user.uniqueid }}</a>
+	</li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<strong>There are no categories present.</strong>
+{% endif %}
+</div>
+<div>
+<a href="/rango/about/">About Rango</a><br />
+<a href="/rango/add_user/">Add a New User</a><br />
+</div>
+</body>
+</html>

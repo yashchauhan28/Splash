@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<title>Rango</title>
+</head>
+<body>
+<h1>Rango says...</h1>
+<div>hey there partner!</div>
+<h2>currently managing {{ id }} </h2>
+
+<div id = "client-request"><p id = "info">{{ requested_content }}</p></div>
+<div id = "client-asking"><p id ="ask"> {{ interact_content }} </p></div>
+<p id ="return-values">{{ return_values }}</p>
+<p id ="download-files">{{ files }}</p>
+<p id ="donwload-folders">{{ folder }}</p>
+<div id = "client-reponse"></div>
+
+</body>
+</html>
